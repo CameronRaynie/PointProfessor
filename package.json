@@ -1,23 +1,26 @@
 {
   "name": "pointprofessor",
-  "version": "1.0.0",
   "description": "Point Professor App",
-  "main": "PointProfessor.js",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  
+  "author": "Cameron Raynie",
+
   "scripts": {
     "start": "node pointprofessor.js"
+  },
+  "main": "PointProfessor.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CameronRaynie/PointProfessor.git"
   },
-  "author": "Cameron Raynie",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/CameronRaynie/PointProfessor/issues"
   },
   "homepage": "https://github.com/CameronRaynie/PointProfessor#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "express-handlebars": "^3.1.0",
-  }
 }
