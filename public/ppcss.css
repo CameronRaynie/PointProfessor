@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*Cameron Raynie, CPSC24700, Project 1, Summer LT1*/
+body{
+	background-color:beige;
+}
+.color{
+	color:blue;
+}
+.color2{
+	color:orange;
+}
+.color3{
+	color:black
+}
+ul{
+	list-style: circle;
+}
+/*collapsible sheet for old projects*/
+.collapsible {
+	background-color: lightgray;
+	color:black;
+	cursor: crosshair;
+	padding: 5px;
+	width: 100%;
+	text-align: left;
+	font-size: 15px;
+  }
+
+  .active, .collapsible:hover {
+	background-color: darkgrey;
+  }
+
+  .content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: whitesmoke;
+  }
