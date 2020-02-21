@@ -4,9 +4,15 @@ const app = express()
 
 var http = require('http'),
     port = process.env.PORT || 3000;
-
+    
+http.createServer(function(req, res) {
+    res.writeHead(200, { 'Content-Type': 'text/plain' });
+    res.end('Hello World\n');
+}).listen(port);
 
 app.use(express.static(__dirname + '/public'))
+
+
 
 // configure Handlebars view engine
 app.engine('handlebars', expressHandlebars({
