@@ -8,9 +8,9 @@
     "author": "Cameron Raynie",
   
     "scripts": {
-      "start": "node PointProfessor.js"
+      "start": "node index.js"
     },
-    "main": "PointProfessor.js",
+    "main": "index.js",
     "dependencies": {
       "express": "^4.17.1",
       "express-handlebars": "^3.1.0"
