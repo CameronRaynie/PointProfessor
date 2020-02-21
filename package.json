@@ -1,0 +1,25 @@
+{
+  "name": "pointprofessor",
+  "version": "1.0.0",
+  "description": "Point Professor App",
+  "main": "PointProfessor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CameronRaynie/PointProfessor.git"
+  },
+  "author": "Cameron Raynie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CameronRaynie/PointProfessor/issues"
+  },
+  "homepage": "https://github.com/CameronRaynie/PointProfessor#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "node": "^13.8.0",
+    "nodemon": "^2.0.2"
+  }
+}
