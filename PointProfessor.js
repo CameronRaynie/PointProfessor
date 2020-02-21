@@ -1,7 +1,11 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
 const app = express()
-const port = process.env.PORT || 3000
+
+var http = require('http'),
+    port = process.env.PORT || 3000;
+
+
 app.use(express.static(__dirname + '/public'))
 
 // configure Handlebars view engine
@@ -12,7 +16,7 @@ app.engine('handlebars', expressHandlebars({
 
 
 
-app.get('', (req, res) => res.render('PointProfessorView/PointProfessor'))
+app.get('/', (req, res) => res.render('PointProfessorView/PointProfessor'))
 
 // custom 404 page
 app.use((req, res) => {
