@@ -1,26 +1,14 @@
 const express = require('express')
 const expressHandlebars = require('express-handlebars')
 const app = express()
-
 const port = process.env.PORT || 3000
 app.use(express.static(__dirname + '/public'))
-
-http.createServer(function(req, res) {
-    res.writeHead(200, { 'Content-Type': 'text/plain' });
-    res.end('Hello World\n');
-}).listen(port);
-
-
-
-
 
 // configure Handlebars view engine
 app.engine('handlebars', expressHandlebars({
     defaultLayout: 'main',
   }))
   app.set('view engine', 'handlebars')
-
-
 
 app.get('/', (req, res) => res.render('PointProfessorView/PointProfessor'))
 
