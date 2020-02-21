@@ -10,7 +10,7 @@ app.engine('handlebars', expressHandlebars({
   }))
   app.set('view engine', 'handlebars')
 
-app.get('/', (req, res) => res.render('PointProfessorView/PointProfessor'))
+app.get('/PointProfessor1', (req, res) => res.render('PointProfessorView/PointProfessor'))
 
 // custom 404 page
 app.use((req, res) => {
