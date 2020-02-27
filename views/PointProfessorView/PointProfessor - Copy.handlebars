@@ -7,47 +7,43 @@
 
 <body onload="refreshAssignments()">
     <h1>Point Professor v0.1</h1>
-    
-    <span id="TextLabel">Assignment Type</span>
-    <span id="PointLabel">Points Earned</span>
-    <span id="TotalPoints">Total Potential Points</span>
-    <Span id="WeightLabel">Assignment Weight</Span>
 
+    <span id="badAlign">&mdash;&mdash;&mdash;</span><span id="TextLabel">Assignment Type</span><span
+        id="badAlign">&mdash;&mdash;</span><span id="PointLabel">Points Earned</span><span
+        id="badAlign">&mdash;&mdash;</span><span id="TotalPoints">Total Potential Points</span><span
+        id="badAlign">&mdash;&mdash;</span><Span id="WeightLabel">Assignment Weight</Span>
     <ol type="1" id="liAssignments">
         <li>
             <input type="text" value="Homework">
-            <input id="hw1" type="number" value="90" min="0">
+            <input id="ass1" type="number" value="90" min="0">
             <input id="total1" type="number" value="100" min="0">
             <input id="weight1" type="number" value="10" min="0">
         </li>
         <li>
             <input type="text" value="Test">
-            <input id="hw2" type="number" value="250" min="0">
+            <input id="ass2" type="number" value="250" min="0">
             <input id="total2" type="number" value="300" min="0">
             <input id="weight2" type="number" value="40" min="0">
         </li>
         <li>
             <input type="text" value="Lab">
-            <input id="hw3" type="number" value="600" min="0">
+            <input id="ass3" type="number" value="600" min="0">
             <input id="total3" type="number" value="600" min="0">
             <input id="weight3" type="number" value="20" min="0">
         </li>
         <li>
             <input type="text" value="Quiz">
-            <input id="hw4" type="number" value="45" min="0">
+            <input id="ass4" type="number" value="45" min="0">
             <input id="total4" type="number" value="50" min="0">
             <input id="weight4" type="number" value="25" min="0">
         </li>
         <li>
             <input type="text" value="Discussion">
-            <input id="hw5" type="number" value="10" min="0">
+            <input id="ass5" type="number" value="10" min="0">
             <input id="total5" type="number" value="10" min="0">
             <input id="weight5" type="number" value="5" min="0">
         </li>
     </ol>
-
     <input type="button" value="Calculate Weighted Grade" onclick="calcGrade()">
-    <input type="button" value="Add Assignment" onclick="addAssignment()">
-    <input type="button" value="Remove Assignment" onclick="removeAssignment()">
     <p id="WHO"></p>
 </body>

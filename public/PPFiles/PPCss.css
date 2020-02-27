@@ -1,14 +1,18 @@
-#PointLabel{
-    text-align: left;
-    color:blue;
+#PointLabel {
+  text-align: left;
+  color: blue;
 }
-#WeightLabel{
-    text-align: right;
-    color:red;
+#WeightLabel {
+  text-align: right;
+  color: red;
 }
-#badAlign{
-    visibility: hidden;
+#badAlign {
+  visibility: hidden;
 }
-body{
-    background-color:burlywood;
+body {
+  background-color: burlywood;
+ /* background-color: darkolivegreen;
+  background-image: url("/img/projectorScreen.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;*/
 }

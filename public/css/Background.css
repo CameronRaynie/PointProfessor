@@ -1,0 +1,55 @@
+/*Chalky Font*/
+@font-face{
+  font-Family:"Chalky";
+  src: url("/font/Berton-Roman.ttf");
+}
+
+/*Fixing image scaling*/
+html {
+  background-color: beige;
+  background-image: url("/img/Background.jpg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+.btn {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #f24537),
+    color-stop(1, #c62d1f)
+  );
+  background-color: #f24537;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  text-indent: 0px;
+  display: inline-block;
+  color: #ffffff;
+  font-family: Georgia;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  height: 65px;
+  line-height: 65px;
+  width: 131px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: 24px;
+  border-style: none;
+}
+.btn:hover {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0.05, #c62d1f),
+    color-stop(1, #f24537)
+  );
+  background-color: #c62d1f;
+}
+.btn:active {
+  position: relative;
+  top: 1px;
+}
