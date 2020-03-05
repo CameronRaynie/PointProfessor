@@ -16,9 +16,38 @@ function calcGrade() {
         }
 
     }
-    document.getElementById("WHO").innerHTML = totalGrade;
-}
+    findLetterGrade(totalGrade);
+    totalGrade = parseFloat(totalGrade).toFixed(2);
+    document.getElementById("WHO").value = totalGrade;
 
+}
+//Function to return letter Grade for ease of reading
+function findLetterGrade(grade) {
+    var letterGrade = "N/A"
+    if (grade >= 90) {
+        letterGrade = "A"
+    } else if (grade >= 80) {
+        letterGrade = "B"
+    } else if (grade >= 70) {
+        letterGrade = "C"
+    } else if (grade >= 60) {
+        letterGrade = "D"
+    } else {
+        letterGrade = "F"
+    };
+    document.getElementById("WHO2").value = letterGrade;
+}
+//Function to clear entries, so users can wipe out the presets easily
+function clearEntries(){
+    var hwCount = 0;
+    hwCount = document.getElementById("liAssignments").childElementCount;
+
+    for (var i = 1; i <= hwCount; i++) {
+            document.getElementById("hw" + i).value = 0;
+            document.getElementById("total" + i).value = 0;
+            document.getElementById("weight" + i).value = 0;
+    }
+}
 //Function to add an assignment to the end of the list.
 //Gets the current html construct and appends an additional numerically incremented table to the end of it.
 function addAssignment() {

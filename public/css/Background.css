@@ -48,6 +48,7 @@ html {
     color-stop(1, #f24537)
   );
   background-color: #c62d1f;
+  cursor: pointer;
 }
 .btn:active {
   position: relative;

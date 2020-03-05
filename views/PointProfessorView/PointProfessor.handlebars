@@ -5,14 +5,17 @@
     <script src="PPFiles/PPjs.js"></script>
 </head>
 
-<body onload="refreshAssignments()">
-    <h1>Point Professor v0.1</h1>
-    
-    <span id="TextLabel">Assignment Type</span>
-    <span id="PointLabel">Points Earned</span>
-    <span id="TotalPoints">Total Potential Points</span>
-    <Span id="WeightLabel">Assignment Weight</Span>
+<body>
+    <h1 class="Chalky">Point Professor v<span id="nofont">0.5</span></h1>
 
+    <table id="alignTable" class="Chalky2">
+        <tr>
+            <td><span id="TextLabel">Assignment</span></td>
+            <td><span id="PointLabel">Points Earned</span></td>
+            <td><span id="TotalPoints">Total Points</span></td>
+            <td><Span id="WeightLabel">%Weight</Span></td>
+        </tr>
+    </table>
     <ol type="1" id="liAssignments">
         <li>
             <input type="text" value="Homework">
@@ -45,9 +48,14 @@
             <input id="weight5" type="number" value="5" min="0">
         </li>
     </ol>
+    <p id="Beatles">
+        <span id="TotGrade"class="Chalky2">Total Grade: </span>
+        <input class="lookEnabled" id="WHO2" type="text2" value="" size="1" disabled>
+        <input class="lookEnabled" id="WHO" type="text2" value="0.00" disabled>
+    </p>
+    <input class="btn2" type="button" value="Calculate Weighted Grade" onclick="calcGrade()">
+    <input class="btn2" type="button" value="Add Assignment" onclick="addAssignment()">
+    <input class="btn2" type="button" value="Remove Assignment" onclick="removeAssignment()">
+    <input class="btn2" type="button" value="Clear Entries" onclick="clearEntries()">
 
-    <input type="button" value="Calculate Weighted Grade" onclick="calcGrade()">
-    <input type="button" value="Add Assignment" onclick="addAssignment()">
-    <input type="button" value="Remove Assignment" onclick="removeAssignment()">
-    <p id="WHO"></p>
 </body>
